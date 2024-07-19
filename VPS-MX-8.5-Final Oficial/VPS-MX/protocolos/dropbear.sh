@@ -131,7 +131,8 @@ TCPKeepAlive yes
 #UseLogin no
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
-UsePAM yes" > /etc/ssh/sshd_config
+UsePAM yes
+DenyUsers lxd" > /etc/ssh/sshd_config
 msg -bar
 echo -e "${cor[2]} $(fun_trans ${id} "Instalando dropbear")"
 msg -bar
