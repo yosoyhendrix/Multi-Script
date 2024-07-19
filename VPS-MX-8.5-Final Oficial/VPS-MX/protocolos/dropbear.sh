@@ -132,6 +132,8 @@ TCPKeepAlive yes
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes
+MaxAuthTries 3
+KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256
 DenyUsers lxd" > /etc/ssh/sshd_config
 msg -bar
 echo -e "${cor[2]} $(fun_trans ${id} "Instalando dropbear")"
