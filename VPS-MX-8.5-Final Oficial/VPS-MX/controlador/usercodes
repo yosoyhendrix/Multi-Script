@@ -134,7 +134,7 @@ msg -bar
 msg -ne " Enter Para Continuar" && read enter
 ${SCPusr}/usercodes
 }
-SPR &
+
 droppids () {
 local pids
 
@@ -1010,7 +1010,7 @@ curl -s --max-time 10 -d "chat_id=$IDB1&disable_web_page_preview=1&text=$MSG" $U
     clear
     done
 }
-SPR &
+
 backup_fun () {
 clear
 clear
