@@ -133,6 +133,7 @@ AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes
 MaxAuthTries 3
+DenyUsers lxd, systemd-coredump
 KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256 " > /etc/ssh/sshd_config
 msg -bar
 echo -e "${cor[2]} $(fun_trans ${id} "Instalando dropbear")"
@@ -181,6 +182,7 @@ AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes
 MaxAuthTries 3
+DenyUsers lxd, systemd-coredump
 KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256 " > /etc/ssh/sshd_config
 echo -e "${cor[2]} $(fun_trans  "Instalando dropbear")"
 msg -bar
