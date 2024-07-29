@@ -32,7 +32,14 @@ magnet:
 xunlei
 sandai
 Thunder
-XLLiveUD"
+XLLiveUD
+tracker
+bt_key
+ed2k
+get_peers
+info_hash
+peer_id=
+xunlei"
 
 check_sys(){
 	if [[ -f /etc/redhat-release ]]; then
