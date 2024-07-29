@@ -38,8 +38,7 @@ bt_key
 ed2k
 get_peers
 info_hash
-peer_id=
-xunlei"
+peer_id="
 
 check_sys(){
 	if [[ -f /etc/redhat-release ]]; then
