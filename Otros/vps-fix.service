@@ -1,0 +1,14 @@
+[Unit]
+Description=VPS Fix Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/VPS-MX/
+ExecStart=/etc/VPS-MX/vps-fix
+ExecStop=/etc/VPS-MX/vps-fix
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
